@@ -1,0 +1,44 @@
+//
+//<div class="wrapper-gold-strip">
+//   <div class="gold-strip"></div>
+//</div>
+
+/// Absolute relatively
+
+.main-theme .wrapper-gold-strip {
+ width: 100%;
+ position: relative;
+
+ .gold-strip {
+   width: 5px;
+   height: 150px;
+   background: #9F892E;
+   position: absolute;
+   top: 52px;
+   left: 27px;
+   z-index: 1;
+ }
+}
+
+//
+// Underline
+//
+span:after{
+ content: '';
+ position: absolute;
+ width: 0; height: 2.5px;
+ display: block;
+ margin-top: -20px;
+ right: 0;
+ background: #fff;
+ transition: width 2s ease;
+ -webkit-transition: width 2s ease;
+}
+
+span:hover:after{
+ width: auto;
+ left: 0;
+ background: #fff;
+}
+
+////////////////
